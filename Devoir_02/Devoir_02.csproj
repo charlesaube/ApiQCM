@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20201119161018_mig1_dbinit.cs" />
+    <Compile Remove="Migrations\20201119161018_mig1_dbinit.Designer.cs" />
+    <Compile Remove="Migrations\20201120215636_mig1_dbinit.cs" />
+    <Compile Remove="Migrations\20201120215636_mig1_dbinit.Designer.cs" />
+    <Compile Remove="Migrations\20201124231238_mig1_dbinit.cs" />
+    <Compile Remove="Migrations\20201124231238_mig1_dbinit.Designer.cs" />
+    <Compile Remove="Migrations\20201125012557_mig1_dbinit.cs" />
+    <Compile Remove="Migrations\20201125012557_mig1_dbinit.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.2.4" />
+  </ItemGroup>
+
+
+</Project>
